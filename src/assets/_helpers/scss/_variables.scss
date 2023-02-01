@@ -11,3 +11,33 @@
   --nav-height:40px;
 }
 
+@media only screen and (min-width:640px) {
+  :root{
+    --container-width: 640px;
+  }
+}
+
+@media only screen and (min-width:769px) {
+  :root{
+    --container-width: 769px;
+  }
+}
+
+@media only screen and (min-width:1024px) {
+  :root{
+    --container-width: 1024px;
+  }
+}
+
+@media only screen and (min-width:1280px) {
+  :root{
+    --container-width: 1280px;
+  }
+}
+
+
+
+
+
+
+

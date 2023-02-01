@@ -1,9 +1,13 @@
 <template>
+
     <NavigationBar/>
-    <SecondCoverSection/>
-    <ExpertiseSection/>
-    <ExperienceSection/>
-    <ContactSection/>
+    <div class="app-container">
+      <SecondCoverSection/>
+      <ExpertiseSection/>
+      <ExperienceSection/>
+      <ContactSection/>
+    </div>
+
 </template>
 
 <script>
@@ -41,13 +45,45 @@ export default {
   }
 
   section{
-    height: 100vh;
-    padding-top: 40px;
+    height: calc(100vh - 40px);
   }
 
   ul{
     list-style: none;
   }
+
+  .app-container{
+    max-width: var(--max-width) ;
+    margin:0 auto;
+  }
+
+  //@media (min-width: 1280px){
+  //  $width : 1280px;
+  //  :root {
+  //    --max-width: 1280px;
+  //  }
+  //}
+  //
+  //@media (min-width: 1024px){
+  //  $width : 1024px;
+  //  :root {
+  //    --max-width: 1024px;
+  //  }
+  //}
+  //
+  //@media (min-width: 769px){
+  //  $width : 769px;
+  //  :root {
+  //    --max-width: 769px;
+  //  }
+  //}
+  //
+  //@media (min-width: 640px){
+  //  $width : 640px;
+  //  :root {
+  //    --max-width: 640px;
+  //  }
+  //}
 
 
 </style>

@@ -33,6 +33,9 @@ export default {
   name: "ContactSection",
   components:{
     HeadingIcon
+  },
+  mounted() {
+    document.title = 'Nikhil Aukhaj'
   }
 
 }
@@ -40,11 +43,10 @@ export default {
 
 <style lang="scss" scoped>
   .contact{
-    padding-top: 60px;
     .contact-wrapper{
-      padding: 0 10%;
       height: 100%;
-
+      display: grid;
+      align-items: center;
       .contact-view{
         display:grid;
         grid-template-columns: 1fr 2fr;

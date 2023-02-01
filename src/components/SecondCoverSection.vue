@@ -31,14 +31,12 @@ export default {
   .second-cover{
     .second-cover-wrapper{
       height: 100%;
-      padding:0 30px;
       display:grid;
       grid-template-columns: 1fr 1fr;
       align-items: center;
 
       .second-cover-text{
         font-weight: 300;
-        padding-left: 30%;
         .second-cover-text__title{
           font-weight: 600;
           font-size: 40px;

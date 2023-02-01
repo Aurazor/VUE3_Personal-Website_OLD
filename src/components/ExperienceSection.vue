@@ -34,7 +34,6 @@ export default {
 <style lang="scss" scoped>
   .experience{
     .experience-wrapper{
-      padding: 0 10%;
 
       h1{
         margin:20px 0;

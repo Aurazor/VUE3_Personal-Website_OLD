@@ -52,7 +52,6 @@ export default {
 <style lang="scss" scoped>
   .expertise{
     .expertise-wrapper{
-      padding: 0 5%;
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-column-gap: 50px;

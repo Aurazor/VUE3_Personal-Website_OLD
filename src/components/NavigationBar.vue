@@ -21,13 +21,13 @@ export default {
 <style lang="scss" scoped>
  nav{
    background: white;
-   position: sticky;
+   position: fixed;
    top: 0;
    width: 100%;
    display: flex;
    justify-content: space-between;
    align-items: center;
-   height: 40px;
+   height: var(--nav-height);
    padding: 0 30px;
    -webkit-box-shadow:0px 1px 1px #101010;
    -moz-box-shadow:0px 1px 1px #101010;

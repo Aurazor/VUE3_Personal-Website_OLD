@@ -1,9 +1,9 @@
 <template>
   <section class="second-cover">
      <div class="second-cover-wrapper">
-       <div class="second-cover-text">
+       <div class="second-cover-text flex-center-vertical">
          <div class="second-cover-text__subtitle">My Specialization</div>
-         <div class="second-cover-text__title">I am a trending<br> developer who cares <br>about the details</div>
+         <div class="second-cover-text__title">I am a <span class="highlight-text">developer</span> who cares about the details</div>
          <div class="second-cover-test__list">
            <ul>
              <li>01. Web Design</li>
@@ -14,7 +14,7 @@
            </ul>
          </div>
        </div>
-       <div class="second-cover-img">
+       <div class="second-cover-img flex-center-vertical">
          <img src="../assets/images/second_cover.jpg" alt="second profile cover image">
        </div>
      </div>
@@ -29,23 +29,31 @@ export default {
 
 <style lang="scss" scoped>
   .second-cover{
+    height: calc(100vh - var(--nav-height));
     .second-cover-wrapper{
       height: 100%;
       display:grid;
-      grid-template-columns: 1fr 1fr;
-      align-items: center;
+      grid-template-columns: 1fr 1.5fr;
+      grid-gap: 40px;
+      padding: 50px 0;
 
       .second-cover-text{
         font-weight: 300;
+
+        .second-cover-text__subtitle{
+          font-size: 2rem;
+        }
+
         .second-cover-text__title{
-          font-weight: 600;
-          font-size: 40px;
-          line-height: 43px;
-          margin-top:30px;
-          margin-bottom: 50px;
+          font-size: 2.9rem;
+          font-weight: 700;
+          line-height: 50px;
+          margin-top: 18px;
+          margin-bottom: 24px;
         }
 
         .second-cover-test__list{
+          font-size: 1.2rem;
           ul{
             li{
               text-transform: uppercase;
@@ -57,7 +65,10 @@ export default {
       }
 
       .second-cover-img{
-        justify-self: center;
+        img{
+          width: 100%;
+          border-radius: 20px;
+        }
       }
     }
   }

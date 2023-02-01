@@ -13,8 +13,9 @@ export default {
 
 <style lang="scss" scoped>
 h1{
-  margin:20px 0;
   position: relative;
+  font-size: 2.8rem;
+  color: var(--color-main);
 
   &:before{
     background-image: url("../assets/images/square_dots.png");

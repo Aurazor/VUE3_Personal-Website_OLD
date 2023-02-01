@@ -1,12 +1,12 @@
 <template>
   <div class="timeline">
     <div class="timeline-icon">
-      <img src="../assets/images/graduate.png" alt="graduation cap">
+      <img src="../assets/images/cap.png" alt="graduation cap">
     </div>
     <div class="timeline-text">
-      <div class="timeline-text__year">2019-present</div>
-      <div class="timeline-text__title">Bachlor's Degree</div>
-      <div class="timeline-text__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem.</div>
+      <div class="timeline-text__year">{{year}}</div>
+      <div class="timeline-text__title">{{title}}</div>
+      <div class="timeline-text__desc">{{desc}}</div>
     </div>
   </div>
 </template>
@@ -37,15 +37,17 @@ export default {
       }
 
       .timeline-text{
-        padding-left: 40px;
+        padding-left: 30px;
 
         .timeline-text__year{
           font-weight: 300;
+          color: var(--color-main);
         }
 
         .timeline-text__title{
-          font-weight: 600;
           margin: 8px 0;
+          font-size: 1.2rem;
+          text-transform: uppercase;
         }
 
         .timeline-text__desc{

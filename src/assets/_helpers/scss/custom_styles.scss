@@ -1,0 +1,16 @@
+.flex-center{
+  display:flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.flex-center-vertical{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.highlight-text{
+  color: var(--color-main);
+}
+

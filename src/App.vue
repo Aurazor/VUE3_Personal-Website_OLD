@@ -1,12 +1,13 @@
 <template>
-
     <NavigationBar/>
+
     <div class="app-container">
-      <SecondCoverSection/>
-      <ExpertiseSection/>
-      <ExperienceSection/>
-      <ContactSection/>
+        <SecondCoverSection/>
     </div>
+
+    <ExpertiseSection/>
+    <ExperienceSection/>
+    <ContactSection/>
 
 </template>
 
@@ -31,8 +32,10 @@ export default {
 
 <style lang="scss">
   @import './assets/_helpers/scss/_variables.scss';
+  @import './assets/_helpers/scss/custom_styles.scss';
+
   @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,600;0,700;1,400&display=swap');
-  /*@import 'assets/_helpers/custom_fonts.css';*/
+
   *{
     box-sizing: border-box;
     padding: 0;
@@ -42,10 +45,12 @@ export default {
   body{
     font-family: 'Poppins', sans-serif;
     position: relative;
+    overflow-x:hidden;
+
   }
 
   section{
-    height: calc(100vh - 40px);
+    height: 100vh;
   }
 
   ul{
@@ -53,8 +58,8 @@ export default {
   }
 
   .app-container{
-    max-width: var(--max-width) ;
-    margin:0 auto;
+    max-width: var(--container-width) ;
+    margin:var(--nav-height) auto 0;
   }
 
   //@media (min-width: 1280px){

@@ -1,7 +1,11 @@
 <template>
   <section class="contact">
     <div class="contact-wrapper">
-      <HeadingIcon heading="Get In Touch"/>
+      <div class="contact-heading">
+        <HeadingIcon heading="Contact Me"/>
+        <img src="../assets/images/plane_paper.png" alt="plane paper">
+      </div>
+
       <div class="contact-view">
         <div class="contact-desc">
           <h3>Let's Talk About Everything!</h3>
@@ -44,13 +48,27 @@ export default {
 <style lang="scss" scoped>
   .contact{
     .contact-wrapper{
+      max-width: var(--container-width);
+      margin: 0 auto;
+      padding: 60px 0;
       height: 100%;
-      display: grid;
-      align-items: center;
+
+      .contact-heading{
+        position: relative;
+
+        img{
+          position: absolute;
+          top: 0;
+          left: 25%;
+          width: 104px;
+          z-index: -1;
+
+        }
+      }
       .contact-view{
         display:grid;
         grid-template-columns: 1fr 2fr;
-        margin-top: 50px;
+        margin-top: 18px;
         .contact-desc{
           p{
             font-weight: 300;
@@ -64,7 +82,7 @@ export default {
               border-radius: 20px;
               outline: none;
               border: none;
-              box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+              box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
               width: 100%;
               font-family: 'Poppins', sans-serif;
 
@@ -90,7 +108,7 @@ export default {
             }
 
             .contact-form__btn-submit{
-              background: red;
+              background: var(--color-main);
               color: white;
               width: auto;
               font-weight: bold;

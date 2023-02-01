@@ -1,12 +1,12 @@
 <template>
  <section class="expertise">
    <div class="expertise-wrapper">
-     <div class="expertise-img-container">
-       <img src="../assets/images/second_cover.jpg" alt="Expertise Images">
+     <div class="expertise-img-container flex-center-vertical">
+       <img src="../assets/images/student_meditating.png" alt="Expertise Images">
      </div>
-     <div class="expertise-text">
+     <div class="expertise-text flex-center-vertical">
        <div class="expertise-text__title">
-         My mission is to develop best design.
+         My mission is to develop <span class="highlight-text"> best design</span>.
        </div>
        <div class="expertise-text__subtitle">I will help you build and grow your business. I create clarifying strategy, websites and mobile apps.</div>
        <div class="expertise-text__details">
@@ -51,38 +51,55 @@ export default {
 
 <style lang="scss" scoped>
   .expertise{
+    background:var(--background-main);
     .expertise-wrapper{
+      max-width: var(--container-width) ;
+      margin:0 auto;
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1.5fr 1fr;
       grid-column-gap: 50px;
-      align-items: center;
       height: 100%;
 
       .expertise-img-container{
-        justify-self: center;
+        img{
+          width: 100%;
+        }
       }
 
       .expertise-text{
         .expertise-text__title{
-          font-weight: 600;
-          font-size: 45px;
-          line-height: 45.2px;
+          font-weight: 700;
+          font-size: 3.2rem;
+          line-height: 54.2px;
         }
 
         .expertise-text__subtitle{
           font-weight: 300;
+          font-size: 1.2rem;
           margin-top: 20px;
           margin-bottom: 25px;
         }
 
         .expertise-text__details{
+
           .expertise-text__details-skill{
+            margin-bottom: 30px;
+
             .expertise-text__details-skill-header {
               display: flex;
               justify-content: space-between;
               align-items: center;
               text-transform: uppercase;
               font-weight: 600;
+              margin-bottom: 10px;
+
+              .expertise-header-description{
+
+              }
+
+              .expertise-header-percentage{
+                font-weight: 300;
+              }
             }
               .expertise-text__details-skill-progress{
                 width: 100%;
@@ -99,7 +116,7 @@ export default {
 
                   &:after{
                     content: '';
-                    background: red;
+                    background: var(--color-main);
                     height: inherit;
                     position: absolute;
                     top: 0;

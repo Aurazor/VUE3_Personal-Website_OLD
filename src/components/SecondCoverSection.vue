@@ -1,6 +1,6 @@
 <template>
   <section class="second-cover">
-     <div class="second-cover-wrapper">
+     <div class="second-cover-wrapper app-container">
        <div class="second-cover-text flex-center-vertical">
          <div class="second-cover-text__subtitle">My Specialization</div>
          <div class="second-cover-text__title">I am a <span class="highlight-text">developer</span> who cares about the details</div>
@@ -29,6 +29,7 @@ export default {
 
 <style lang="scss" scoped>
   .second-cover{
+    margin-top:var(--nav-height);
     height: calc(100vh - var(--nav-height));
     .second-cover-wrapper{
       height: 100%;

@@ -32,7 +32,7 @@ export default {
    -webkit-box-shadow:0px 1px 1px #101010;
    -moz-box-shadow:0px 1px 1px #101010;
    box-shadow:0px 1px 1px #101010;
-   z-index: 2;
+   z-index: 3;
 
    .nav-logo{
      font-weight: 600;

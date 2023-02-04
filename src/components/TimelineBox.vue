@@ -41,7 +41,7 @@ export default {
 
         .timeline-text__year{
           font-weight: 300;
-          color: var(--color-main);
+          color: var(--color-primary);
         }
 
         .timeline-text__title{

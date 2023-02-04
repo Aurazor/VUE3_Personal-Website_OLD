@@ -108,7 +108,7 @@ export default {
             }
 
             .contact-form__btn-submit{
-              background: var(--color-main);
+              background: var(--color-primary);
               color: white;
               width: auto;
               font-weight: bold;

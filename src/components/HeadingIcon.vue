@@ -12,22 +12,22 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-h1{
-  position: relative;
-  font-size: 2.8rem;
-  color: var(--color-main);
+  h1{
+    position: relative;
+    font-size: 2.8rem;
+    z-index: 2;
 
-  &:before{
-    background-image: url("../assets/images/square_dots.png");
-    background-size: 35px 35px;
-    width: 35px;
-    height: 35px;
-    content: "";
-    position: absolute;
-    top: 0;
-    transform: translate(-45%, -25%);
-    z-index: -1;
-    opacity: 0.05;
+    &:before{
+      content: "";
+      background-image: url('../assets/images/icons/abstract_icon_2.svg');
+      background-size: var(--heading-icon-size)  var(--heading-icon-size);
+      filter: hue-rotate(180deg);
+      width:  var(--heading-icon-size);
+      height:  var(--heading-icon-size);
+      position: absolute;
+      top: 0;
+      z-index: -1;
+      transform: translate(-50%, -70%);
+    }
   }
-}
 </style>

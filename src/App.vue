@@ -1,13 +1,9 @@
 <template>
     <NavigationBar/>
-
-    <div class="app-container">
-        <SecondCoverSection/>
-    </div>
-
+    <SecondCoverSection/>
     <ExpertiseSection/>
-    <ExperienceSection/>
-    <ContactSection/>
+    <ExperienceSection />
+<!--    <ContactSection/>-->
 
 </template>
 
@@ -16,7 +12,7 @@ import SecondCoverSection from "@/components/SecondCoverSection";
 import NavigationBar from "@/components/NavigationBar";
 import ExpertiseSection from "@/components/ExpertiseSection";
 import ExperienceSection from "@/components/ExperienceSection";
-import ContactSection from "@/components/ContactSection";
+// import ContactSection from "@/components/ContactSection";
 
 export default {
   name: 'App',
@@ -25,7 +21,7 @@ export default {
     SecondCoverSection,
     ExpertiseSection,
     ExperienceSection,
-    ContactSection: ContactSection
+    // ContactSection: ContactSection
   }
 }
 </script>
@@ -59,7 +55,7 @@ export default {
 
   .app-container{
     max-width: var(--container-width) ;
-    margin:var(--nav-height) auto 0;
+    margin: 0 auto;
   }
 
   //@media (min-width: 1280px){

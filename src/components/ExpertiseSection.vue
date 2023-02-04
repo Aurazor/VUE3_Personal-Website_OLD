@@ -116,7 +116,7 @@ export default {
 
                   &:after{
                     content: '';
-                    background: var(--color-main);
+                    background-image: linear-gradient(to right, var(--color-secondary) , var(--color-primary));
                     height: inherit;
                     position: absolute;
                     top: 0;

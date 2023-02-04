@@ -11,6 +11,12 @@
 }
 
 .highlight-text{
-  color: var(--color-main);
+   background: -webkit-linear-gradient(var(--color-primary), var(--color-secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-to-right{
+  background-image: linear-gradient(to right, var(--color-secondary) , var(--color-primary));
 }
 

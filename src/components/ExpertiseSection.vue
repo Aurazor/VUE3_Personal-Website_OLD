@@ -1,5 +1,5 @@
 <template>
- <section class="expertise">
+ <section class="expertise" id="expertise">
    <div class="expertise-wrapper">
      <div class="expertise-img-container flex-center-vertical">
        <img src="../assets/images/student_meditating.png" alt="Expertise Images">
@@ -150,6 +150,22 @@ export default {
         }
       }
 
+    }
+  }
+
+  @media only screen and (max-width:769px) {
+    .expertise{
+      height: auto;
+
+      .expertise-wrapper{
+        grid-template-columns: 1fr;
+
+        .expertise-text{
+          .expertise-text__title{
+            text-align: center;
+          }
+        }
+      }
     }
   }
 </style>

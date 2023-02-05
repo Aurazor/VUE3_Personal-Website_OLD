@@ -1,5 +1,6 @@
 <template>
     <NavigationBar/>
+    <MobileNavbarMenu/>
     <SecondCoverSection/>
     <ExpertiseSection/>
     <ExperienceSection />
@@ -9,6 +10,7 @@
 </template>
 
 <script>
+import MobileNavbarMenu from "@/components/MobileNavbarMenu";
 import SecondCoverSection from "@/components/SecondCoverSection";
 import NavigationBar from "@/components/NavigationBar";
 import ExpertiseSection from "@/components/ExpertiseSection";
@@ -19,13 +21,17 @@ import FooterBar from "@/components/FooterBar";
 export default {
   name: 'App',
   components: {
+    MobileNavbarMenu,
     NavigationBar,
     SecondCoverSection,
     ExpertiseSection,
     ExperienceSection,
     FooterBar
     // ContactSection: ContactSection
-  }
+  },
+  mounted() {
+    document.title = "Nikhil Aukhaj";
+  },
 }
 </script>
 
@@ -52,6 +58,11 @@ export default {
     min-height: 100vh;
   }
 
+  a{
+    text-decoration: none;
+    color: black;
+  }
+
   ul{
     list-style: none;
   }
@@ -60,34 +71,6 @@ export default {
     max-width: var(--container-width) ;
     margin: 0 auto;
   }
-
-  //@media (min-width: 1280px){
-  //  $width : 1280px;
-  //  :root {
-  //    --max-width: 1280px;
-  //  }
-  //}
-  //
-  //@media (min-width: 1024px){
-  //  $width : 1024px;
-  //  :root {
-  //    --max-width: 1024px;
-  //  }
-  //}
-  //
-  //@media (min-width: 769px){
-  //  $width : 769px;
-  //  :root {
-  //    --max-width: 769px;
-  //  }
-  //}
-  //
-  //@media (min-width: 640px){
-  //  $width : 640px;
-  //  :root {
-  //    --max-width: 640px;
-  //  }
-  //}
 
 
 </style>

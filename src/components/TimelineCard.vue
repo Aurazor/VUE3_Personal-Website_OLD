@@ -46,9 +46,9 @@ export default {
       padding: 20px 30px;
       border-radius: 11px;
       background-color: white;
-      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      box-shadow: rgba(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
       position: relative;
-      transition: 0.6s ease;
+      transition: 0.9s ease;
       border: 1px solid transparent;
 
       .timeline-card__header{
@@ -61,7 +61,7 @@ export default {
       }
 
       &:hover{
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
       }
 
     }

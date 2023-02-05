@@ -1,5 +1,5 @@
 <template>
-  <section class="experience">
+  <section class="experience" id="experience">
     <div class="experience-wrapper app-container">
       <div class="experience-text">
         <div class="experience-text-title">My Experience</div>

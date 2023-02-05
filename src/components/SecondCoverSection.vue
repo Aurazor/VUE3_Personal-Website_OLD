@@ -1,5 +1,5 @@
 <template>
-  <section class="second-cover">
+  <section class="second-cover" id="second-intro">
      <div class="second-cover-wrapper app-container">
        <div class="second-cover-text flex-center-vertical">
          <div class="second-cover-text__subtitle">My Specialization</div>
@@ -69,6 +69,20 @@ export default {
         img{
           width: 100%;
           border-radius: 20px;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width:769px) {
+    .second-cover{
+      height: auto;
+
+      .second-cover-wrapper{
+        grid-template-columns: 1fr;
+
+        .second-cover-text{
+          text-align: center;
         }
       }
     }

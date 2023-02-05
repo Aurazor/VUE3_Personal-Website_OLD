@@ -3,6 +3,7 @@
     <SecondCoverSection/>
     <ExpertiseSection/>
     <ExperienceSection />
+    <FooterBar/>
 <!--    <ContactSection/>-->
 
 </template>
@@ -12,6 +13,7 @@ import SecondCoverSection from "@/components/SecondCoverSection";
 import NavigationBar from "@/components/NavigationBar";
 import ExpertiseSection from "@/components/ExpertiseSection";
 import ExperienceSection from "@/components/ExperienceSection";
+import FooterBar from "@/components/FooterBar";
 // import ContactSection from "@/components/ContactSection";
 
 export default {
@@ -21,6 +23,7 @@ export default {
     SecondCoverSection,
     ExpertiseSection,
     ExperienceSection,
+    FooterBar
     // ContactSection: ContactSection
   }
 }
@@ -46,7 +49,7 @@ export default {
   }
 
   section{
-    height: 100vh;
+    min-height: 100vh;
   }
 
   ul{

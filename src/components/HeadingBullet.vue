@@ -1,5 +1,5 @@
 <template>
-  <h1 class="highlight-text">{{heading}}</h1>
+  <h1 >{{heading}}</h1>
 </template>
 
 <script>
@@ -17,15 +17,15 @@ h1{
   z-index: 2;
 
   &:before{
-    content: "";
-    background-image: url('../assets/images/icons/abstract_icon_bulletpoint_2.svg');
-    background-size: var(--heading-icon-size)  var(--heading-icon-size);
-    filter: hue-rotate(180deg);
-    width:  var(--heading-icon-size);
-    height:  var(--heading-icon-size);
-    position: absolute;
-    top: 0;
-    z-index: -1;
+      content: "";
+      background-image: url('../assets/images/icons/abstract_icon_bulletpoint_2.svg');
+      background-size: var(--heading-icon-size)  var(--heading-icon-size);
+      filter: hue-rotate(180deg);
+      width:  var(--heading-icon-size);
+      height:  var(--heading-icon-size);
+      position: absolute;
+      top: 0;
+      z-index: -1;
     transform: translateX(-130%);
   }
 }

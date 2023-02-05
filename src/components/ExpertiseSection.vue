@@ -52,9 +52,11 @@ export default {
 <style lang="scss" scoped>
   .expertise{
     background:var(--background-main);
+    height: 100vh;
     .expertise-wrapper{
       max-width: var(--container-width) ;
       margin:0 auto;
+      padding: 50px 0;
       display: grid;
       grid-template-columns: 1.5fr 1fr;
       grid-column-gap: 50px;

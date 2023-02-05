@@ -1,13 +1,13 @@
 <template>
   <nav>
     <div class="nav-logo">
-      NIKHIL.
+      NIKHIL AUKHAJ
     </div>
-    <div class="nav-email">
-      nikhilaukhaj590@gmail.com
-    </div>
-    <div class="nav-icon">
-      <img src="../assets/images/hamburger.png" alt="navigation icon">
+    <div class="nav-items">
+      <div class="nav-items-link text-animate">Intro</div>
+      <div class="nav-items-link text-animate">Skills</div>
+      <div class="nav-items-link text-animate">Experience</div>
+      <div class="nav-items-link rounded-link">Contact Me</div>
     </div>
   </nav>
 </template>
@@ -29,24 +29,38 @@ export default {
    align-items: center;
    height: var(--nav-height);
    padding: 0 30px;
-   -webkit-box-shadow:0px 1px 1px #101010;
-   -moz-box-shadow:0px 1px 1px #101010;
-   box-shadow:0px 1px 1px #101010;
    z-index: 3;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
    .nav-logo{
-     font-weight: 600;
-   }
-   .nav-email{
-     font-weight: 300;
+     font-weight: bold;
+     font-size: 1.3rem;
    }
 
-   .nav-icon{
-     width: 24px;
+   .nav-items{
+     text-transform: uppercase;
+     display: flex;
+     align-items: center;
 
-     img{
-       width: 100%;
+     .nav-items-link{
+       display:inline-block;
+       margin: 0 10px;
+       cursor: pointer;
+       transition: 0.4s ease;
+       color: #3e3e3e;
+
+       &:hover.text-animate{
+         color: var(--color-primary);
+       }
+     }
+
+     .rounded-link{
+       background-color: var(--color-primary);
+       color: white;
+       padding: 5px 10px;
+       border-radius: 20px;
      }
    }
+
  }
 </style>

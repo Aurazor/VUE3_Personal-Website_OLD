@@ -20,7 +20,6 @@ h1{
       content: "";
       background-image: url('../assets/images/icons/abstract_icon_bulletpoint_2.svg');
       background-size: var(--heading-icon-size)  var(--heading-icon-size);
-      filter: hue-rotate(180deg);
       width:  var(--heading-icon-size);
       height:  var(--heading-icon-size);
       position: absolute;

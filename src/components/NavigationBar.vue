@@ -12,8 +12,10 @@
       <div class="nav-items-link"><a class="text-animate" href="#second-intro">Intro</a> </div>
       <div class="nav-items-link"><a class="text-animate" href="#expertise">Skills</a></div>
       <div class="nav-items-link"><a class="text-animate" href="#experience">Experience</a></div>
-      <div class="nav-items-link rounded-link"><a href="">Contact</a></div>
+      <div class="nav-items-link rounded-link rounded-link-1"><a href="#">Contact</a></div>
+      <div class="nav-items-link rounded-link rounded-link-2"><a href="@/assets/documents/CV_Nikhil_Aukhaj.pdf">Download CV</a></div>
     </div>
+
     <div class="nav-hamburger-menu"  v-on:click="handleClick">
       <img class="nav-hamburger-menu__img" src="../assets/images/icons/hamburger.png" alt="mobile menu icon">
     </div>
@@ -44,7 +46,8 @@ export default {
    justify-content: space-between;
    align-items: center;
    height: var(--nav-height);
-   padding: 0 30px;
+   padding-left: 30px;
+   padding-right: 5px;
    z-index: 3;
    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
@@ -91,13 +94,21 @@ export default {
      }
 
      .rounded-link{
-       background-color: var(--color-primary);
        padding: 5px 20px;
        border-radius: 20px;
 
        a{
          color: white;
        }
+     }
+
+     .rounded-link-1{
+       background-color: var(--color-primary);
+     }
+
+     .rounded-link-2{
+       background-color: var(--color-tertiary);
+       margin-left: 0;
      }
    }
 
@@ -106,7 +117,7 @@ export default {
    }
  }
 
- @media only screen and (max-width:769px) {
+ @media only screen and (max-width: 800px) {
    nav {
      .nav-items {
        display: none;

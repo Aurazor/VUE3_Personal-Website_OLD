@@ -36,11 +36,14 @@ export default {
        width: 100%;
        padding: 10px 10px ;
        //transition: 0.9s ease;
-       border-radius: 10px;
+       border-radius: 4px;
 
        &:hover{
          background: var(--color-primary);
-         color: white;
+
+         a{
+           color: white;
+         }
        }
      }
    }

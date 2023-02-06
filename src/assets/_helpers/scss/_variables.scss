@@ -7,7 +7,7 @@
   --color-secondary: #D769E4;
   --color-tertiary: #ff9735;
 
- --background-main:#e3f2fd;
+ --background-main:#2777fc;
 
   --container-width: 481px;
   --nav-height: 50px;
@@ -43,7 +43,8 @@
 
 @media only screen and (min-width:1280px) {
   :root{
-    --container-width: 1280px;
+    //--container-width: 1280px;
+    --container-width: 1125px;
   }
 }
 

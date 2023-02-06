@@ -2,8 +2,8 @@
   <section class="second-cover" id="second-intro">
      <div class="second-cover-wrapper app-container">
        <div class="second-cover-text flex-center-vertical">
-         <div class="second-cover-text__subtitle">My Specialization</div>
-         <div class="second-cover-text__title">I am a <span class="highlight-text">developer</span> who cares about the details</div>
+         <div class="second-cover-text__subtitle">Software Engineer</div>
+         <div class="second-cover-text__title">I am a <span class="highlight-text">Software Engineer</span> who cares about the details</div>
          <div class="second-cover-test__list">
            <ul>
              <li>01. Web Design</li>
@@ -15,7 +15,7 @@
          </div>
        </div>
        <div class="second-cover-img flex-center-vertical">
-         <img src="../assets/images/second_cover.jpg" alt="second profile cover image">
+         <img src="../assets/images/leo.png" alt="second profile cover image">
        </div>
      </div>
   </section>
@@ -34,7 +34,7 @@ export default {
     .second-cover-wrapper{
       height: 100%;
       display:grid;
-      grid-template-columns: 1fr 1.5fr;
+      grid-template-columns: 1fr 1fr;
       grid-gap: 40px;
       padding: 50px 0;
 
@@ -83,6 +83,26 @@ export default {
 
         .second-cover-text{
           text-align: center;
+          text-transform: uppercase;
+
+          .second-cover-text__title{
+            line-height: 40px;
+            font-size: 2.6rem;
+          }
+          .second-cover-text__subtitle{
+            font-size: 1.6rem;
+          }
+        }
+
+        .second-cover-img{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          grid-row: 1;
+
+          img{
+            width: 75%;
+          }
         }
       }
     }

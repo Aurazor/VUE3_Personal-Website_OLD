@@ -4,7 +4,7 @@
       <HeadingBullet v-bind:heading="year"/>
     </div>
     <div class="timeline-card-box" :class="icon">
-      <div class="timeline-card__header">
+      <div class="timeline-card__header highlight-text-timeline-header">
         {{ header }}
       </div>
       <div class="timeline-card__subtitle">
@@ -46,14 +46,22 @@ export default {
       padding: 20px 30px;
       border-radius: 11px;
       background-color: white;
-      box-shadow: rgba(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
       position: relative;
-      transition: 0.9s ease;
+      transition: 0.4s ease;
       border: 1px solid transparent;
+      box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
 
       .timeline-card__header{
         margin-bottom: 15px;
         font-size: 1.2rem;
+        font-weight: bold;
+        display: inline-block;
+        //font-size: 1.2rem;
+        //display: inline-block;
+        //padding: 4px 10px;
+        //border-radius: 10px;
+        //border: 1px solid gold;
+        //font-weight: 600;
       }
 
       .timeline-card__subtitle{

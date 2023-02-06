@@ -16,7 +16,13 @@
   -webkit-text-fill-color: transparent;
 }
 
+.highlight-text-timeline-header{
+  background: -webkit-linear-gradient(gold, violet);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .gradient-to-right{
-  background-image: linear-gradient(to right, var(--color-secondary) , var(--color-primary));
+background-image: linear-gradient(to right, var(--color-secondary) , var(--color-primary));
 }
 

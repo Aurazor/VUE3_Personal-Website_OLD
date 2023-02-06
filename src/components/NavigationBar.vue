@@ -47,9 +47,15 @@ export default {
    align-items: center;
    height: var(--nav-height);
    padding-left: 30px;
-   padding-right: 5px;
+   padding-right: 15px;
    z-index: 3;
-   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   //box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   /* From https://css.glass */
+   background: rgba(255, 255, 255, 0.2);
+   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+   backdrop-filter: blur(5px);
+   -webkit-backdrop-filter: blur(5px);
+   border: 1px solid rgba(255, 255, 255, 0.3);
 
    .nav-brand{
      font-weight: bold;

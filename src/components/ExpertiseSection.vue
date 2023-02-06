@@ -6,7 +6,7 @@
      </div>
      <div class="expertise-text flex-center-vertical">
        <div class="expertise-text__title">
-         My mission is to develop <span class="highlight-text"> best design</span>.
+         My mission is to develop <span> best design</span>.
        </div>
        <div class="expertise-text__subtitle">I will help you build and grow your business. I create clarifying strategy, websites and mobile apps.</div>
        <div class="expertise-text__details">
@@ -69,6 +69,7 @@ export default {
       }
 
       .expertise-text{
+        color: white;
         .expertise-text__title{
           font-weight: 700;
           font-size: 3.2rem;
@@ -145,7 +146,6 @@ export default {
                 }
 
               }
-
           }
         }
       }
@@ -159,10 +159,14 @@ export default {
 
       .expertise-wrapper{
         grid-template-columns: 1fr;
+        padding: 0 24px;
 
         .expertise-text{
           .expertise-text__title{
             text-align: center;
+            font-size: 2.6rem;
+            line-height: 40px;
+            text-transform: uppercase;
           }
         }
       }

@@ -2,7 +2,7 @@
   <section class="experience" id="experience">
     <div class="experience-wrapper app-container">
       <div class="experience-text">
-        <div class="experience-text-title">My Experience</div>
+        <div class="experience-text-title highlight-text-timeline-header">My Experience</div>
       </div>
       <div class="experience-timeline-cards">
         <TimelineCard year="2012" header="Sir Leckraz Teelock SSS" subtitle="At Sir Leckraz Teelock, I was captivated by the wonders of computer studies and mathematics. Algorithms, data structures, and programming as a whole had me under their spell, and I couldn't get enough of them. My focus was unwavering, and I couldn't wait to delve deeper into the exciting world of technology."/>

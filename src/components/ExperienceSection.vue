@@ -30,7 +30,7 @@ export default {
 <style lang="scss" scoped>
   .experience{
     .experience-wrapper{
-      width: var(--container-width);
+      max-width: var(--container-width);
       height: 100%;
       padding: 15px 0;
 

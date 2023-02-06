@@ -23,6 +23,7 @@ export default {
      right: 0;
      width: 50%;
      background: white;
+     z-index: 5;
    }
  }
 </style>

@@ -5,18 +5,18 @@ const HAMBURGER_ICON_CLOSE = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAA
 export function mobileNavbarHamburgerClick(){
     let mobileNavMenu = document.querySelector('.mobile-nav-menu');
     if(mobileNavMenu.classList.contains('active')){
-        changeIcon(HAMBURGER_ICON_DEFAULT);
+        changeNavIcon(HAMBURGER_ICON_DEFAULT);
         mobileNavMenu.classList.remove('active');
         console.log('hamburger is closed!');
     }else{
-        changeIcon(HAMBURGER_ICON_CLOSE);
+        changeNavIcon(HAMBURGER_ICON_CLOSE);
         mobileNavMenu.classList.add('active');
         console.log('hamburger is active!');
     }
     console.log('displaying mobile menu');
 }
 
-function  changeIcon(hamburger_icon_state){
+function  changeNavIcon(hamburger_icon_state){
     let hamburger_icon = document.querySelector('.nav-hamburger-menu__img');
     hamburger_icon.src = hamburger_icon_state;
 }

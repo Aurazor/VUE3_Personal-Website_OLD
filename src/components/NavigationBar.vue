@@ -16,20 +16,33 @@
       <div class="nav-items-link rounded-link rounded-link-2"><a href="@/assets/documents/CV_Nikhil_Aukhaj.pdf">Download CV</a></div>
     </div>
 
-    <div class="nav-hamburger-menu"  v-on:click="handleClick">
-      <img class="nav-hamburger-menu__img" src="../assets/images/icons/hamburger.png" alt="mobile menu icon">
+    <div class="nav-hamburger-menu"  v-on:click="toggleHamburgerMenu" >
+      <template v-if="isHamburgerMenuOpen">
+        <img class="nav-hamburger-menu__img" src="../assets/images/icons/hamburger_close.png" alt="mobile menu icon close">
+      </template>
+      <template v-else>
+        <img class="nav-hamburger-menu__img" src="../assets/images/icons/hamburger.png" alt="mobile menu icon">
+      </template>
     </div>
   </nav>
 </template>
 
 <script>
-import {mobileNavbarHamburgerClick} from '../assets/custom_scripts/mobile_nav';
+// import {mobileNavbarHamburgerClick} from '../assets/custom_scripts/mobile_nav';
 
 export default {
   name: "NavigationBar",
+  data: function () {
+    return {
+      isHamburgerMenuOpen : false,
+    }
+  },
   methods:{
-    handleClick(){
-      mobileNavbarHamburgerClick()
+    toggleHamburgerMenu(){
+      console.log('sending event:' + this.isHamburgerMenuOpen);
+      this.isHamburgerMenuOpen = !this.isHamburgerMenuOpen;
+      //send event
+      this.$emit('hamburgerClick-event',  this.isHamburgerMenuOpen);
     }
   }
 

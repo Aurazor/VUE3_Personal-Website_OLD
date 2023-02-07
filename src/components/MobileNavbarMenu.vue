@@ -1,5 +1,5 @@
 <template>
-  <div class="mobile-nav-menu">
+  <div class="mobile-nav-menu" :class="is_active">
     <div class="nav-items">
       <div class="nav-items-link"><a class="text-animate" href="#second-intro">Intro</a> </div>
       <div class="nav-items-link"><a class="text-animate" href="#expertise">Skills</a></div>
@@ -12,7 +12,21 @@
 
 <script>
 export default {
-  name: "MobileNavbarMenu"
+  name: "MobileNavbarMenu",
+  props:{
+    is_active:String
+  },
+  methods:{
+    // toggleMobileMenu(isHamburgerMenuOpen){
+    //   console.log(isHamburgerMenuOpen);
+    //   if(isHamburgerMenuOpen){
+    //     this.active = 'active'
+    //   }else{
+    //     this.active = ''
+    //   }
+    // }
+  }
+
 }
 </script>
 

@@ -1,6 +1,7 @@
 <template>
-    <NavigationBar/>
-    <MobileNavbarMenu/>
+    <NavigationBar @hamburgerClick-event="hamburger_click"/>
+    <MobileNavbarMenu v-bind:is_active="is_active"/>
+    <SocialBar />
     <SecondCoverSection/>
     <ExpertiseSection/>
     <ExperienceSection />
@@ -15,7 +16,9 @@ import SecondCoverSection from "@/components/SecondCoverSection";
 import NavigationBar from "@/components/NavigationBar";
 import ExpertiseSection from "@/components/ExpertiseSection";
 import ExperienceSection from "@/components/ExperienceSection";
+import SocialBar from "@/components/SocialBar";
 import FooterBar from "@/components/FooterBar";
+
 // import ContactSection from "@/components/ContactSection";
 
 export default {
@@ -26,11 +29,27 @@ export default {
     SecondCoverSection,
     ExpertiseSection,
     ExperienceSection,
-    FooterBar
+    SocialBar,
+    FooterBar,
     // ContactSection: ContactSection
   },
+  data(){
+    return {
+      is_active: '',
+    }
+  },
+  methods:{
+    hamburger_click(isHamburgerMenuOpen){
+      console.log('event received: ' + isHamburgerMenuOpen);
+      if(isHamburgerMenuOpen){
+        this.is_active = 'active'
+      }else{
+        this.is_active = ''
+      }
+    }
+  },
   mounted() {
-    document.title = "Nikhil Aukhaj";
+    // document.title = "Nikhil Aukhaj";
   },
 }
 </script>

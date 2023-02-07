@@ -43,24 +43,29 @@ export default {
      width: 50%;
      background: white;
      z-index: 5;
-     padding: 0 30px;
    }
 
    .nav-items{
      .nav-items-link{
        cursor: pointer;
        width: 100%;
-       padding: 10px 10px ;
-       //transition: 0.9s ease;
-       border-radius: 4px;
+       padding: 10px 18px ;
+       transition: 0.3s ;
+
+       a{
+         font-size: 1.1rem;
+       }
 
        &:hover{
          background: var(--color-primary);
+         transform: scale(1.2);
 
          a{
            color: white;
          }
        }
+
+
      }
    }
  }

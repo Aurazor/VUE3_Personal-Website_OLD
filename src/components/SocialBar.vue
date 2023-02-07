@@ -48,4 +48,18 @@ export default {
       }
     }
   }
+
+  @media only screen and (max-width:769px) {
+    .social-bar{
+      top: auto;
+      bottom: 0;
+      display: flex;
+      padding: 6px 7px;
+      border-radius: 3px;
+
+      .social-bar-img{
+        margin: 0 7px;
+      }
+    }
+  }
 </style>

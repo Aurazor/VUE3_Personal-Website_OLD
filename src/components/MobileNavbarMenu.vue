@@ -33,6 +33,8 @@ export default {
 <style lang="scss" scoped>
  .mobile-nav-menu{
    display: none;
+   border-top: 6px solid gold;
+
    &.active{
      display: block;
      height: 100%;

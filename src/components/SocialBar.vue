@@ -40,11 +40,12 @@ export default {
 
       img{
         width: 100%;
-        transition: 0.4s ease;
+        transition: 0.4s ease-out;
 
         &:hover{
-          transform: scale(1.5);
+          transform:scale(1.5)  rotate(360deg);
         }
+
       }
     }
   }

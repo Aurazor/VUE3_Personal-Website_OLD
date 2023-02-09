@@ -43,7 +43,7 @@ export default {
         transition: 0.4s ease-out;
 
         &:hover{
-          transform:scale(1.5)  rotate(360deg);
+          transform:rotate(360deg);
         }
 
       }

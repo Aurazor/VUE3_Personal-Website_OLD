@@ -38,14 +38,18 @@ export default {
       margin: 5px 0;
       cursor: pointer;
 
-      img{
-        width: 100%;
-        transition: 0.4s ease-out;
+      a {
+        display: block;
+        height: 100%;
+        img {
+          width: 100%;
+          transition: 0.4s ease-out;
 
-        &:hover{
-          transform:rotate(360deg);
+          &:hover {
+            transform: rotate(360deg);
+          }
+
         }
-
       }
     }
   }

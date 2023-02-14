@@ -4,7 +4,7 @@
     <SocialBar />
     <SecondCoverSection/>
     <ExpertiseSection/>
-    <ExperienceSection />
+    <XperienceSection />
     <FooterBar/>
 <!--    <ContactSection/>-->
 
@@ -15,9 +15,11 @@ import MobileNavbarMenu from "@/components/MobileNavbarMenu";
 import SecondCoverSection from "@/components/SecondCoverSection";
 import NavigationBar from "@/components/NavigationBar";
 import ExpertiseSection from "@/components/ExpertiseSection";
-import ExperienceSection from "@/components/ExperienceSection";
+// import ExperienceSection from "@/components/ExperienceSection";
+import XperienceSection from "@/components/XperienceSection";
 import SocialBar from "@/components/SocialBar";
 import FooterBar from "@/components/FooterBar";
+
 
 // import ContactSection from "@/components/ContactSection";
 
@@ -28,7 +30,7 @@ export default {
     NavigationBar,
     SecondCoverSection,
     ExpertiseSection,
-    ExperienceSection,
+    XperienceSection,
     SocialBar,
     FooterBar,
     // ContactSection: ContactSection

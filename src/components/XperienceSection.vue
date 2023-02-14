@@ -7,12 +7,12 @@
             <h1>Education</h1>
             <div class="xperience-content-box__details">
               <h3>2012</h3>
-              <p>Sir Leckraz Teelock SSS</p>
+              <h5>Sir Leckraz Teelock SSS</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, reprehenderit?</p>
             </div>
             <div class="xperience-content-box__details">
               <h3>2019</h3>
-              <p>University Of Technology Mauritius</p>
+              <h5>University Of Technology, Mauritius</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, reprehenderit?</p>
             </div>
           </div>
@@ -20,7 +20,7 @@
            <h1>Professional</h1>
              <div class="xperience-content-box__details">
                <h3>2022</h3>
-               <p>Publicis Groupe</p>
+               <h5>Publicis Groupe</h5>
                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, reprehenderit?</p>
              </div>
          </div>
@@ -38,7 +38,7 @@ export default {
 
 <style lang="scss" scoped>
   .xperience{
-    height: 100vh;
+    height: auto;
     min-height:100vh;
     background-image: linear-gradient(to right, gold, orange);
 
@@ -70,6 +70,23 @@ export default {
             }
 
             .xperience-content-box__details{
+              margin-bottom: 35px;
+              padding-left: 20px;
+              border-left: 4px solid black;
+
+                h3{
+                  font-size:3.1rem;
+                }
+
+                h5{
+                  font-size: 2.1rem;
+                  text-transform: uppercase;
+                }
+
+              p{
+                color: #ffffffb0;
+              }
+
 
             }
         }

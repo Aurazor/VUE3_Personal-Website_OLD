@@ -53,6 +53,7 @@ export default {
   .expertise{
     background:var(--background-main);
     height: 100vh;
+    mix-blend-mode: darken;
     .expertise-wrapper{
       max-width: var(--container-width) ;
       margin:0 auto;
@@ -69,7 +70,7 @@ export default {
       }
 
       .expertise-text{
-        color: white;
+        //color: black;
         .expertise-text__title{
           font-weight: 700;
           font-size: 3.2rem;

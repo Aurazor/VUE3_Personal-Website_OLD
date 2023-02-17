@@ -52,8 +52,8 @@ export default {
 <style lang="scss" scoped>
   .expertise{
     background:var(--background-main);
-    height: 100vh;
-    mix-blend-mode: darken;
+    min-height: 100vh;
+
     .expertise-wrapper{
       max-width: var(--container-width) ;
       margin:0 auto;
@@ -70,7 +70,15 @@ export default {
       }
 
       .expertise-text{
-        //color: black;
+        padding: 20px;
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+
         .expertise-text__title{
           font-weight: 700;
           font-size: 3.2rem;
@@ -160,7 +168,7 @@ export default {
 
       .expertise-wrapper{
         grid-template-columns: 1fr;
-        padding: 0 24px;
+        padding: 25px;
 
         .expertise-text{
           .expertise-text__title{

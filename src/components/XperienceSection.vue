@@ -3,32 +3,17 @@
     <div class="xperience-wrapper">
       <div></div>
        <div class="xperience-content">
-         <h1>Education</h1>
-         <div class="xperience-content-box">
-           <div class="xperience-content-box__container">
-             <div class="xperience-content-box__details">
-               <h3>2012</h3>
-               <h5>Sir Leckraz Teelock SSS</h5>
-               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, reprehenderit?</p>
-             </div>
-           </div>
-
-           <div class="xperience-content-box__container">
-             <div class="xperience-content-box__details">
-               <h3>2019</h3>
-               <h5>University Of Technology, Mauritius</h5>
-               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, reprehenderit?</p>
-             </div>
-           </div>
-
-          </div>
-         <h1>Professional</h1>
-         <div class="xperience-content-box">
-           <div class="xperience-content-box__container">
-             <div class="xperience-content-box__details">
-               <h3>2022</h3>
-               <h5>Publicis Groupe</h5>
-               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, reprehenderit?</p>
+         <div v-for="(item, index) in timeline" :key="index">
+           <h1>{{item.name}}</h1>
+           <div v-for="(innerItem,newIndex) in item.experience" :key="newIndex">
+             <div class="xperience-content-box">
+               <div class="xperience-content-box__container">
+                 <div class="xperience-content-box__details">
+                   <h3>{{innerItem.year}}</h3>
+                   <h5>{{innerItem.place}}</h5>
+                   <p>{{innerItem.details}}</p>
+                 </div>
+               </div>
              </div>
            </div>
 
@@ -41,7 +26,38 @@
 
 <script>
 export default {
-  name: "XperienceSection"
+  name: "XperienceSection",
+  data() {
+    return {
+      "timeline": [
+        {
+          "name": "Education",
+          "experience": [
+            {
+              "year": "2012",
+              "place": "Sir Leckraz Teelock SSS",
+              "details": "Lorem ipsum 1234"
+            },
+            {
+              "year": "2019",
+              "place": "University Of Technology, Mauritius",
+              "details": "Lorem ipsum 1234"
+            }
+          ]
+        },
+        {
+          "name": "Professional",
+          "experience": [
+            {
+              "year": "2022",
+              "place": "Publicis Groupe",
+              "details": "Lorem ipsum 1234"
+            }
+          ]
+        }
+      ]
+    }
+  }
 }
 </script>
 
@@ -49,7 +65,8 @@ export default {
   .xperience{
     height: auto;
     min-height:100vh;
-    background-image: linear-gradient(to right, gold, orange);
+    //background: url("../assets/images/backgrounds/hexa-pattern-07.png");
+
 
     .xperience-wrapper{
       height: 100%;
@@ -59,12 +76,12 @@ export default {
 
       .xperience-content{
         /* From https://css.glass */
-        background: rgba(255, 255, 255, 0.2);
-        border-radius: 16px;
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(5px);
-        -webkit-backdrop-filter: blur(5px);
-        border: 1px solid rgba(255, 255, 255, 0.3);
+        //background: rgba(255, 255, 255, 0.2);
+        //border-radius: 16px;
+        //box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        //backdrop-filter: blur(5px);
+        //-webkit-backdrop-filter: blur(5px);
+        //border: 1px solid rgba(255, 255, 255, 0.3);
         height: 100%;
         padding: 10px 40px;
 
@@ -74,8 +91,8 @@ export default {
           font-size: 4.1rem;
           font-weight: bold;
           opacity: 0.8;
-          color: white;
           text-transform: uppercase;
+          margin-bottom: 10px;
         }
 
         .xperience-content-box{
@@ -94,7 +111,7 @@ export default {
               content:"";
               position: absolute;
               top: 0;
-              left: -0.1%;;
+              left: -0.1%;
               transform: translate(-50%, -50%);
             }
 

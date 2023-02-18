@@ -2,8 +2,8 @@
   <section class="second-cover" id="second-intro">
      <div class="second-cover-wrapper app-container">
        <div class="second-cover-text flex-center-vertical">
-         <div class="second-cover-text__subtitle">Software Engineer</div>
-         <div class="second-cover-text__title">I am a <span class="highlight-text">Software Engineer</span> who cares about the details</div>
+         <div class="second-cover-text__subtitle">Hello</div>
+         <div class="second-cover-text__title">This is <span class="highlight-text">Nikhil Aukhaj</span></div>
          <div class="second-cover-test__list">
            <ul>
              <li>01. Web Design</li>

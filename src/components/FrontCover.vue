@@ -59,7 +59,6 @@ export default {
 
       .front-cover-text__title{
         font-size: 4.1rem;
-
       }
 
       .front-cover-text__desc{

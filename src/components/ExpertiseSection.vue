@@ -2,7 +2,7 @@
  <section class="expertise" id="expertise">
    <div class="expertise-wrapper">
      <div class="expertise-img-container flex-center-vertical">
-       <img src="../assets/images/student_meditating.png" alt="Expertise Images">
+       <img src="../assets/images/VR.png" alt="Expertise Images">
      </div>
      <div class="expertise-text flex-center-vertical">
        <div class="expertise-text__title">

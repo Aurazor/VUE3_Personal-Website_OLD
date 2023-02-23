@@ -6,6 +6,7 @@
     <SocialBar />
     <FrontCover />
     <ExpertiseSection/>
+    <TimeframeSection/>
     <XperienceSection />
     <FooterBar/>
   </div>
@@ -19,6 +20,7 @@ import FrontCover from "@/components/FrontCover";
 import MobileNavbarMenu from "@/components/MobileNavbarMenu";
 import NavigationBar from "@/components/NavigationBar";
 import ExpertiseSection from "@/components/ExpertiseSection";
+import TimeframeSection from "@/components/TimeframeSection";
 import XperienceSection from "@/components/XperienceSection";
 import SocialBar from "@/components/SocialBar";
 import FooterBar from "@/components/FooterBar";
@@ -30,6 +32,7 @@ export default {
     NavigationBar,
     FrontCover,
     ExpertiseSection,
+    TimeframeSection,
     XperienceSection,
     SocialBar,
     FooterBar,

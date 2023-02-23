@@ -4,7 +4,7 @@
   <div class="front-cover-text">
     <div class="front-cover-text__title">Hello,</div>
     <div class="front-cover-text__desc">This is <span>Nikhil Aukhaj</span></div>
-    <div class="front-cover-text__subtitle">An ambitious software engineer in Mauritius.</div>
+    <div class="front-cover-text__subtitle">A software engineer from Mauritius</div>
   </div>
 
   <div class="front-cover-img">
